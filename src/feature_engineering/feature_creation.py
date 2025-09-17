@@ -280,16 +280,25 @@ class FeatureEngineer:
         """
         feature_df = df.copy()
         
-        # State-level aggregations
-        state_age_mean = df.groupby('State')['Age'].mean()
-        state_exp_mean = df.groupby('State')['Years_of_Experience'].mean()
+        # Convert categorical columns back to their original types for calculations
+        if 'State' in feature_df.columns and feature_df['State'].dtype.name == 'category':
+            feature_df['State'] = feature_df['State'].astype(str)
         
-        feature_df['State_Avg_Age'] = df['State'].map(state_age_mean)
-        feature_df['State_Avg_Experience'] = df['State'].map(state_exp_mean)
+        # Ensure numerical columns are numeric
+        for col in ['Age', 'Years_of_Experience']:
+            if col in feature_df.columns:
+                feature_df[col] = pd.to_numeric(feature_df[col], errors='coerce')
+        
+        # State-level aggregations
+        state_age_mean = feature_df.groupby('State')['Age'].mean()
+        state_exp_mean = feature_df.groupby('State')['Years_of_Experience'].mean()
+        
+        feature_df['State_Avg_Age'] = feature_df['State'].map(state_age_mean)
+        feature_df['State_Avg_Experience'] = feature_df['State'].map(state_exp_mean)
         
         # Deviation from state averages
-        feature_df['Age_Deviation_from_State'] = df['Age'] - feature_df['State_Avg_Age']
-        feature_df['Experience_Deviation_from_State'] = df['Years_of_Experience'] - feature_df['State_Avg_Experience']
+        feature_df['Age_Deviation_from_State'] = feature_df['Age'] - feature_df['State_Avg_Age']
+        feature_df['Experience_Deviation_from_State'] = feature_df['Years_of_Experience'] - feature_df['State_Avg_Experience']
         
         # Gender-level aggregations
         gender_gi_rate = df.groupby('Gender')['GI_Aware_Binary'].mean()
