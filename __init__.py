@@ -53,8 +53,9 @@ Machine learning modeling modules
 """
 
 from .ensemble_models import EnsembleModeler
+from .model_evaluation import ModelEvaluator
 
-__all__ = ['EnsembleModeler']
+__all__ = ['EnsembleModeler', 'ModelEvaluator']
 
 # src/utils/__init__.py
 """
