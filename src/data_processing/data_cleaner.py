@@ -201,13 +201,14 @@ class DataCleaner:
         
         # Convert to appropriate types
         df_cleaned['Artisan_ID'] = df_cleaned['Artisan_ID'].astype('int64')
-        df_cleaned['Age'] = df_cleaned['Age'].astype('int64')
-        df_cleaned['Years_of_Experience'] = df_cleaned['Years_of_Experience'].astype('int64')
+        df_cleaned['Age'] = pd.to_numeric(df_cleaned['Age'], errors='coerce').astype('int64')
+        df_cleaned['Years_of_Experience'] = pd.to_numeric(df_cleaned['Years_of_Experience'], errors='coerce').astype('int64')
         
-        # Convert categorical to category type for memory efficiency
+        # Keep categorical columns as strings to avoid numpy operation errors
         categorical_cols = ['State', 'Gender', 'GI_Aware', 'Received_Subsidy', 'Uses_Ecommerce']
         for col in categorical_cols:
-            df_cleaned[col] = df_cleaned[col].astype('category')
+            if col in df_cleaned.columns:
+                df_cleaned[col] = df_cleaned[col].astype('str')
         
         self.logger.info("Data types converted successfully")
         
