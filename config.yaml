@@ -1,0 +1,65 @@
+# Configuration file for Ashta Lakshmi GI Survey Analysis
+
+# Data paths
+data:
+  raw_data: "data/raw/ashta_lakshmi_gi_survey.csv"
+  processed_data: "data/processed/cleaned_survey_data.csv"
+  output_dir: "results/"
+
+# Model parameters
+models:
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+    min_samples_split: 5
+    random_state: 42
+  
+  gradient_boosting:
+    n_estimators: 100
+    learning_rate: 0.1
+    max_depth: 6
+    random_state: 42
+  
+  svm:
+    kernel: 'rbf'
+    C: 1.0
+    gamma: 'scale'
+    probability: true
+    random_state: 42
+
+# Feature engineering
+features:
+  polynomial_degree: 2
+  feature_selection_k: 10
+  target_encoding: true
+
+# Cross-validation
+cv:
+  n_splits: 5
+  shuffle: true
+  stratify: true
+  random_state: 42
+
+# Hyperparameter tuning
+hyperparameter_tuning:
+  method: "bayesian"  # Options: "grid", "random", "bayesian"
+  n_iter: 50
+  cv_folds: 3
+  scoring: "accuracy"
+
+# Visualization
+plots:
+  figsize: [10, 8]
+  style: "whitegrid"
+  color_palette: "Set2"
+  save_format: "png"
+  dpi: 300
+
+# Statistical analysis
+statistics:
+  alpha: 0.05
+  confidence_level: 0.95
+  multiple_testing_correction: "bonferroni"
+
+# Random seed for reproducibility
+random_seed: 42
