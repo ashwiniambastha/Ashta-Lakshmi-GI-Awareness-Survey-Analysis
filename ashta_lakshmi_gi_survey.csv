@@ -1,0 +1,321 @@
+State,Artisan_ID,Gender,GI_Aware,Received_Subsidy,Uses_Ecommerce,Age,Years_of_Experience
+Sikkim,1001,Male,Yes,No,No,38,20
+Meghalaya,1002,Female,No,Yes,No,18,6
+Mizoram,1003,Female,Yes,No,No,25,22
+Sikkim,1004,Female,Yes,No,No,46,18
+Manipur,1005,Male,Yes,No,No,49,8
+Tripura,1006,Female,No,No,No,55,39
+Mizoram,1007,Male,Yes,No,Yes,22,32
+Mizoram,1008,Male,Yes,No,No,64,33
+Sikkim,1009,Male,No,No,No,39,16
+Assam,1010,Female,No,Yes,No,64,12
+Manipur,1011,Female,Yes,No,No,51,38
+Sikkim,1012,Male,Yes,No,No,18,34
+Manipur,1013,Female,Yes,Yes,Yes,43,14
+Manipur,1014,Male,Yes,No,Yes,60,36
+Tripura,1015,Female,Yes,No,No,27,33
+Mizoram,1016,Male,Yes,No,Yes,47,23
+Meghalaya,1017,Female,Yes,No,No,35,2
+Tripura,1018,Male,Yes,No,No,34,21
+Tripura,1019,Female,No,Yes,No,43,2
+Manipur,1020,Male,No,No,No,25,27
+Nagaland,1021,Male,No,No,No,64,9
+Mizoram,1022,Male,Yes,Yes,No,57,1
+Assam,1023,Female,Yes,No,No,29,11
+Tripura,1024,Female,No,No,No,44,3
+Meghalaya,1025,Male,No,No,No,25,23
+Nagaland,1026,Female,Yes,No,No,42,26
+Nagaland,1027,Female,No,No,No,63,4
+Assam,1028,Female,No,No,No,21,18
+Tripura,1029,Female,No,No,No,50,6
+Meghalaya,1030,Male,No,No,No,18,35
+Mizoram,1031,Male,Yes,Yes,No,36,22
+Arunachal Pradesh,1032,Female,Yes,No,No,48,15
+Meghalaya,1033,Female,No,Yes,No,33,22
+Assam,1034,Female,No,Yes,No,31,37
+Nagaland,1035,Male,Yes,No,No,22,12
+Mizoram,1036,Male,Yes,No,No,58,38
+Meghalaya,1037,Female,Yes,No,Yes,43,18
+Arunachal Pradesh,1038,Female,No,No,No,45,35
+Arunachal Pradesh,1039,Female,No,No,No,19,30
+Manipur,1040,Female,Yes,No,Yes,23,24
+Manipur,1041,Female,Yes,Yes,No,26,30
+Sikkim,1042,Male,Yes,No,Yes,50,14
+Assam,1043,Male,No,Yes,No,58,6
+Tripura,1044,Female,No,No,No,42,3
+Meghalaya,1045,Female,No,Yes,Yes,30,16
+Meghalaya,1046,Male,Yes,No,No,26,7
+Tripura,1047,Male,Yes,Yes,No,30,14
+Sikkim,1048,Female,Yes,No,No,48,9
+Nagaland,1049,Male,Yes,No,Yes,58,15
+Nagaland,1050,Male,No,No,No,28,21
+Sikkim,1051,Female,No,Yes,No,21,35
+Nagaland,1052,Female,No,No,No,51,2
+Manipur,1053,Female,No,Yes,No,55,27
+Meghalaya,1054,Male,Yes,No,No,63,2
+Sikkim,1055,Female,No,Yes,No,21,35
+Meghalaya,1056,Male,No,Yes,No,55,18
+Tripura,1057,Male,No,Yes,No,36,14
+Arunachal Pradesh,1058,Female,Yes,No,Yes,23,20
+Manipur,1059,Female,Yes,No,No,51,18
+Mizoram,1060,Female,Yes,Yes,No,35,10
+Manipur,1061,Female,No,No,No,30,25
+Sikkim,1062,Female,Yes,No,No,58,2
+Mizoram,1063,Male,Yes,No,No,40,25
+Arunachal Pradesh,1064,Male,No,No,No,36,33
+Sikkim,1065,Male,Yes,No,Yes,62,36
+Assam,1066,Male,Yes,No,No,28,31
+Meghalaya,1067,Female,Yes,Yes,No,18,14
+Arunachal Pradesh,1068,Male,No,Yes,Yes,41,1
+Meghalaya,1069,Female,Yes,No,No,24,16
+Nagaland,1070,Female,No,No,No,42,3
+Assam,1071,Female,Yes,No,Yes,38,35
+Assam,1072,Female,No,Yes,No,32,6
+Arunachal Pradesh,1073,Female,Yes,No,No,18,25
+Assam,1074,Female,Yes,No,No,29,13
+Mizoram,1075,Male,No,Yes,Yes,24,34
+Assam,1076,Female,Yes,Yes,No,32,8
+Meghalaya,1077,Male,Yes,No,No,38,21
+Meghalaya,1078,Male,Yes,No,No,36,34
+Sikkim,1079,Female,No,Yes,No,46,4
+Meghalaya,1080,Male,Yes,Yes,Yes,42,25
+Sikkim,1081,Female,No,Yes,No,50,15
+Meghalaya,1082,Female,Yes,No,Yes,49,4
+Mizoram,1083,Female,Yes,Yes,Yes,52,12
+Tripura,1084,Male,Yes,Yes,No,61,32
+Sikkim,1085,Male,Yes,No,No,55,32
+Manipur,1086,Female,Yes,Yes,No,43,28
+Nagaland,1087,Female,Yes,No,No,28,13
+Arunachal Pradesh,1088,Female,Yes,Yes,No,52,31
+Meghalaya,1089,Female,No,Yes,No,25,14
+Assam,1090,Female,Yes,Yes,No,63,20
+Tripura,1091,Male,Yes,No,No,31,18
+Meghalaya,1092,Male,No,No,No,27,29
+Assam,1093,Female,Yes,No,Yes,19,6
+Nagaland,1094,Male,Yes,No,No,63,32
+Nagaland,1095,Male,No,No,No,26,29
+Nagaland,1096,Female,No,Yes,Yes,20,2
+Assam,1097,Female,Yes,Yes,Yes,38,23
+Meghalaya,1098,Female,No,No,No,43,19
+Nagaland,1099,Female,Yes,Yes,No,25,31
+Mizoram,1100,Male,Yes,Yes,No,19,5
+Sikkim,1101,Female,Yes,Yes,No,23,19
+Assam,1102,Female,No,Yes,Yes,45,34
+Assam,1103,Male,Yes,Yes,No,46,10
+Meghalaya,1104,Female,Yes,No,No,43,25
+Assam,1105,Female,Yes,No,No,42,2
+Assam,1106,Female,Yes,No,No,29,11
+Nagaland,1107,Female,Yes,No,No,22,31
+Meghalaya,1108,Female,Yes,No,No,51,15
+Nagaland,1109,Male,Yes,Yes,No,54,9
+Sikkim,1110,Male,Yes,No,No,32,23
+Tripura,1111,Female,Yes,No,No,61,19
+Sikkim,1112,Female,Yes,Yes,Yes,53,9
+Tripura,1113,Female,Yes,No,Yes,32,35
+Nagaland,1114,Female,Yes,No,Yes,60,21
+Sikkim,1115,Female,No,No,No,40,9
+Meghalaya,1116,Female,Yes,No,No,23,28
+Arunachal Pradesh,1117,Female,No,Yes,No,63,7
+Nagaland,1118,Female,Yes,No,No,61,16
+Tripura,1119,Female,Yes,No,No,60,16
+Mizoram,1120,Female,Yes,Yes,Yes,62,33
+Tripura,1121,Female,Yes,No,No,38,4
+Mizoram,1122,Male,Yes,No,No,40,4
+Assam,1123,Male,Yes,No,No,60,39
+Sikkim,1124,Male,Yes,No,No,33,17
+Mizoram,1125,Female,Yes,No,No,64,37
+Tripura,1126,Male,Yes,Yes,No,32,39
+Assam,1127,Female,Yes,Yes,Yes,42,29
+Arunachal Pradesh,1128,Female,Yes,No,Yes,53,36
+Meghalaya,1129,Male,Yes,No,No,28,38
+Meghalaya,1130,Female,No,Yes,No,32,39
+Meghalaya,1131,Male,Yes,Yes,No,21,37
+Mizoram,1132,Male,No,No,No,38,35
+Arunachal Pradesh,1133,Female,Yes,No,Yes,30,7
+Mizoram,1134,Male,Yes,No,Yes,39,27
+Sikkim,1135,Male,No,Yes,No,36,28
+Mizoram,1136,Female,No,Yes,No,51,22
+Arunachal Pradesh,1137,Female,Yes,Yes,Yes,31,14
+Arunachal Pradesh,1138,Male,Yes,No,No,21,7
+Sikkim,1139,Female,No,Yes,Yes,63,37
+Arunachal Pradesh,1140,Male,No,No,No,44,22
+Tripura,1141,Male,Yes,Yes,No,46,5
+Arunachal Pradesh,1142,Female,Yes,No,No,64,2
+Meghalaya,1143,Female,Yes,No,No,45,27
+Tripura,1144,Female,Yes,No,No,52,21
+Tripura,1145,Female,Yes,Yes,Yes,25,38
+Sikkim,1146,Female,Yes,Yes,Yes,33,15
+Manipur,1147,Female,Yes,Yes,No,59,21
+Manipur,1148,Male,No,No,No,53,10
+Arunachal Pradesh,1149,Female,Yes,No,No,47,23
+Tripura,1150,Male,Yes,No,No,35,39
+Manipur,1151,Female,No,No,No,19,5
+Manipur,1152,Male,No,No,No,30,1
+Arunachal Pradesh,1153,Male,Yes,Yes,No,21,13
+Manipur,1154,Female,Yes,No,Yes,43,21
+Mizoram,1155,Female,Yes,No,No,42,26
+Assam,1156,Female,Yes,No,Yes,47,21
+Sikkim,1157,Female,Yes,No,Yes,28,18
+Assam,1158,Male,Yes,Yes,No,24,37
+Arunachal Pradesh,1159,Male,Yes,Yes,Yes,48,32
+Meghalaya,1160,Male,Yes,No,No,61,36
+Sikkim,1161,Female,Yes,Yes,No,27,17
+Arunachal Pradesh,1162,Female,Yes,No,No,56,35
+Tripura,1163,Female,Yes,Yes,No,30,11
+Meghalaya,1164,Male,Yes,No,Yes,48,21
+Assam,1165,Female,Yes,Yes,No,24,26
+Arunachal Pradesh,1166,Female,No,No,No,59,4
+Tripura,1167,Female,Yes,No,Yes,59,34
+Sikkim,1168,Female,No,Yes,No,53,18
+Sikkim,1169,Female,No,No,Yes,37,35
+Nagaland,1170,Male,Yes,No,Yes,21,29
+Tripura,1171,Male,Yes,No,No,24,29
+Mizoram,1172,Female,Yes,No,Yes,18,38
+Manipur,1173,Male,Yes,No,No,61,21
+Meghalaya,1174,Male,No,Yes,No,62,13
+Tripura,1175,Male,Yes,Yes,No,59,17
+Nagaland,1176,Male,Yes,Yes,Yes,64,9
+Manipur,1177,Female,Yes,No,Yes,30,1
+Manipur,1178,Female,Yes,Yes,Yes,39,2
+Arunachal Pradesh,1179,Female,Yes,No,No,38,29
+Manipur,1180,Male,Yes,No,No,39,33
+Mizoram,1181,Female,Yes,No,Yes,45,10
+Sikkim,1182,Female,No,No,No,26,21
+Nagaland,1183,Male,Yes,Yes,Yes,43,28
+Manipur,1184,Female,Yes,Yes,No,26,11
+Arunachal Pradesh,1185,Male,Yes,No,No,32,34
+Mizoram,1186,Female,Yes,No,No,27,8
+Assam,1187,Female,Yes,No,No,41,22
+Sikkim,1188,Male,Yes,No,No,59,8
+Sikkim,1189,Male,Yes,Yes,No,25,15
+Nagaland,1190,Female,Yes,No,No,41,17
+Sikkim,1191,Female,Yes,No,Yes,33,23
+Manipur,1192,Female,No,No,No,43,24
+Arunachal Pradesh,1193,Female,Yes,Yes,No,44,19
+Sikkim,1194,Male,Yes,No,No,54,5
+Sikkim,1195,Male,Yes,No,No,21,32
+Assam,1196,Female,No,Yes,No,41,1
+Assam,1197,Male,Yes,No,No,36,23
+Meghalaya,1198,Female,Yes,Yes,No,53,37
+Mizoram,1199,Female,No,No,Yes,56,8
+Manipur,1200,Female,No,No,Yes,27,13
+Sikkim,1201,Male,No,Yes,Yes,42,8
+Tripura,1202,Female,Yes,No,Yes,35,23
+Sikkim,1203,Female,Yes,No,No,36,1
+Arunachal Pradesh,1204,Female,No,No,Yes,53,24
+Meghalaya,1205,Female,No,No,No,27,35
+Mizoram,1206,Male,Yes,No,No,50,24
+Tripura,1207,Female,Yes,No,Yes,22,17
+Meghalaya,1208,Female,Yes,No,No,64,5
+Nagaland,1209,Male,No,Yes,No,52,20
+Mizoram,1210,Male,Yes,No,No,61,21
+Sikkim,1211,Male,Yes,Yes,No,51,31
+Sikkim,1212,Male,Yes,No,No,50,36
+Mizoram,1213,Male,Yes,No,Yes,38,11
+Sikkim,1214,Female,Yes,Yes,No,34,15
+Manipur,1215,Male,Yes,No,No,39,19
+Mizoram,1216,Male,Yes,No,No,54,7
+Meghalaya,1217,Female,Yes,Yes,Yes,32,28
+Mizoram,1218,Male,Yes,No,No,52,5
+Tripura,1219,Female,Yes,No,Yes,45,5
+Sikkim,1220,Male,Yes,Yes,Yes,24,30
+Manipur,1221,Male,Yes,No,No,49,32
+Manipur,1222,Female,Yes,Yes,No,28,8
+Nagaland,1223,Female,Yes,No,No,27,10
+Meghalaya,1224,Female,Yes,No,No,26,38
+Assam,1225,Female,Yes,No,No,31,32
+Assam,1226,Female,No,No,No,30,28
+Mizoram,1227,Male,Yes,No,No,42,17
+Nagaland,1228,Male,No,No,No,19,31
+Arunachal Pradesh,1229,Female,Yes,No,No,52,8
+Mizoram,1230,Female,No,No,Yes,24,25
+Nagaland,1231,Female,No,Yes,No,38,9
+Meghalaya,1232,Female,Yes,No,No,35,2
+Meghalaya,1233,Male,Yes,Yes,No,20,15
+Meghalaya,1234,Female,Yes,Yes,No,59,3
+Meghalaya,1235,Male,Yes,Yes,No,56,36
+Meghalaya,1236,Female,No,No,No,58,4
+Nagaland,1237,Female,No,No,No,28,14
+Nagaland,1238,Female,No,No,No,56,25
+Manipur,1239,Female,Yes,Yes,No,41,10
+Tripura,1240,Female,No,No,No,63,21
+Assam,1241,Male,No,No,No,36,36
+Sikkim,1242,Female,Yes,No,Yes,21,12
+Meghalaya,1243,Female,Yes,No,No,43,27
+Arunachal Pradesh,1244,Female,No,No,No,55,2
+Sikkim,1245,Male,Yes,No,No,59,13
+Nagaland,1246,Female,No,No,Yes,49,32
+Arunachal Pradesh,1247,Male,Yes,Yes,No,56,31
+Arunachal Pradesh,1248,Male,No,Yes,No,62,16
+Arunachal Pradesh,1249,Female,Yes,No,Yes,63,32
+Manipur,1250,Male,Yes,Yes,Yes,53,32
+Nagaland,1251,Male,Yes,No,No,57,34
+Arunachal Pradesh,1252,Female,No,No,Yes,54,11
+Meghalaya,1253,Female,No,No,No,50,10
+Mizoram,1254,Female,Yes,No,No,53,15
+Arunachal Pradesh,1255,Female,Yes,No,Yes,20,17
+Manipur,1256,Female,No,No,No,26,18
+Sikkim,1257,Male,Yes,No,No,25,9
+Nagaland,1258,Male,No,No,No,50,25
+Tripura,1259,Female,Yes,No,No,23,14
+Manipur,1260,Female,Yes,No,No,58,25
+Arunachal Pradesh,1261,Female,Yes,No,Yes,56,22
+Nagaland,1262,Female,Yes,No,No,21,30
+Mizoram,1263,Male,No,No,No,30,20
+Arunachal Pradesh,1264,Female,Yes,No,No,19,21
+Manipur,1265,Male,Yes,No,No,22,32
+Assam,1266,Female,No,No,No,61,21
+Meghalaya,1267,Female,Yes,Yes,No,44,35
+Tripura,1268,Female,Yes,Yes,Yes,49,32
+Sikkim,1269,Male,No,No,No,38,30
+Manipur,1270,Male,Yes,Yes,No,25,39
+Nagaland,1271,Male,Yes,Yes,Yes,55,12
+Tripura,1272,Female,No,Yes,Yes,25,18
+Tripura,1273,Female,Yes,Yes,Yes,20,21
+Tripura,1274,Male,Yes,Yes,No,61,13
+Arunachal Pradesh,1275,Male,Yes,No,No,20,21
+Meghalaya,1276,Female,No,No,No,39,8
+Arunachal Pradesh,1277,Male,Yes,No,No,23,7
+Nagaland,1278,Female,Yes,No,Yes,19,23
+Arunachal Pradesh,1279,Female,No,Yes,No,40,32
+Assam,1280,Male,No,No,No,61,11
+Meghalaya,1281,Male,Yes,No,Yes,19,22
+Meghalaya,1282,Female,Yes,Yes,Yes,55,22
+Nagaland,1283,Male,Yes,No,Yes,34,25
+Sikkim,1284,Male,No,No,No,52,22
+Assam,1285,Female,Yes,No,No,51,28
+Manipur,1286,Female,Yes,No,No,40,29
+Arunachal Pradesh,1287,Female,No,No,No,47,13
+Mizoram,1288,Female,No,Yes,No,25,18
+Arunachal Pradesh,1289,Male,Yes,No,No,39,2
+Tripura,1290,Male,No,Yes,No,61,29
+Arunachal Pradesh,1291,Female,Yes,No,Yes,53,21
+Manipur,1292,Female,No,No,Yes,22,15
+Arunachal Pradesh,1293,Female,Yes,No,No,30,27
+Assam,1294,Female,Yes,No,Yes,46,31
+Assam,1295,Male,No,Yes,No,48,15
+Meghalaya,1296,Female,Yes,Yes,No,64,23
+Nagaland,1297,Male,Yes,Yes,Yes,33,24
+Sikkim,1298,Female,No,Yes,Yes,59,13
+Mizoram,1299,Male,No,No,No,47,22
+Tripura,1300,Male,Yes,No,No,33,37
+Arunachal Pradesh,1301,Male,No,Yes,No,29,33
+Arunachal Pradesh,1302,Female,Yes,No,No,34,3
+Manipur,1303,Female,Yes,No,Yes,33,19
+Nagaland,1304,Female,Yes,No,Yes,29,23
+Assam,1305,Female,Yes,No,No,25,29
+Mizoram,1306,Male,No,Yes,No,37,30
+Meghalaya,1307,Male,Yes,No,Yes,20,39
+Assam,1308,Female,Yes,No,No,33,25
+Tripura,1309,Male,Yes,No,No,47,37
+Nagaland,1310,Female,No,Yes,No,62,8
+Tripura,1311,Male,Yes,No,No,40,16
+Sikkim,1312,Female,Yes,Yes,No,45,8
+Meghalaya,1313,Male,Yes,Yes,No,57,1
+Sikkim,1314,Female,Yes,No,No,22,5
+Manipur,1315,Female,Yes,No,Yes,37,3
+Tripura,1316,Female,No,No,Yes,57,1
+Manipur,1317,Male,No,Yes,No,61,4
+Arunachal Pradesh,1318,Female,Yes,No,No,18,35
+Sikkim,1319,Female,No,Yes,Yes,47,32
+Nagaland,1320,Female,No,Yes,No,38,34
