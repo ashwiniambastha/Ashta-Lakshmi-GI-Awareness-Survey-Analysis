@@ -41,6 +41,9 @@ class FeatureEngineer:
         
         feature_df = df.copy()
         
+        # Fix data types first to prevent categorical operation errors
+        feature_df = self._fix_data_types(feature_df)
+        
         # Create derived features
         feature_df = self._create_derived_features(feature_df)
         
@@ -63,6 +66,39 @@ class FeatureEngineer:
         feature_df = self._scale_features(feature_df)
         
         self.logger.info(f"Feature engineering completed. Features created: {feature_df.shape[1]}")
+        return feature_df
+    
+    def _fix_data_types(self, df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Fix data types to prevent categorical operation errors
+        
+        Args:
+            df: Input dataframe
+            
+        Returns:
+            DataFrame with fixed data types
+        """
+        feature_df = df.copy()
+        
+        # Convert categorical columns to string for operations
+        categorical_cols = ['State', 'Gender', 'GI_Aware', 'Received_Subsidy', 'Uses_Ecommerce']
+        for col in categorical_cols:
+            if col in feature_df.columns:
+                if feature_df[col].dtype.name == 'category':
+                    feature_df[col] = feature_df[col].astype(str)
+        
+        # Ensure numerical columns are numeric
+        numerical_cols = ['Age', 'Years_of_Experience']
+        for col in numerical_cols:
+            if col in feature_df.columns:
+                feature_df[col] = pd.to_numeric(feature_df[col], errors='coerce')
+        
+        # Ensure binary columns are numeric
+        binary_cols = ['GI_Aware_Binary', 'Received_Subsidy_Binary', 'Uses_Ecommerce_Binary', 'Gender_Binary']
+        for col in binary_cols:
+            if col in feature_df.columns:
+                feature_df[col] = pd.to_numeric(feature_df[col], errors='coerce')
+        
         return feature_df
     
     def _create_derived_features(self, df: pd.DataFrame) -> pd.DataFrame:
@@ -301,15 +337,26 @@ class FeatureEngineer:
         feature_df['Experience_Deviation_from_State'] = feature_df['Years_of_Experience'] - feature_df['State_Avg_Experience']
         
         # Gender-level aggregations
-        gender_gi_rate = df.groupby('Gender')['GI_Aware_Binary'].mean()
-        gender_ecom_rate = df.groupby('Gender')['Uses_Ecommerce_Binary'].mean()
+        if 'Gender' in feature_df.columns and feature_df['Gender'].dtype.name == 'category':
+            feature_df['Gender'] = feature_df['Gender'].astype(str)
+            
+        # Ensure binary columns exist and are numeric
+        binary_cols = ['GI_Aware_Binary', 'Uses_Ecommerce_Binary']
+        for col in binary_cols:
+            if col in feature_df.columns:
+                feature_df[col] = pd.to_numeric(feature_df[col], errors='coerce')
         
-        feature_df['Gender_GI_Rate'] = df['Gender'].map(gender_gi_rate)
-        feature_df['Gender_Ecommerce_Rate'] = df['Gender'].map(gender_ecom_rate)
+        gender_gi_rate = feature_df.groupby('Gender')['GI_Aware_Binary'].mean()
+        gender_ecom_rate = feature_df.groupby('Gender')['Uses_Ecommerce_Binary'].mean()
+        
+        feature_df['Gender_GI_Rate'] = feature_df['Gender'].map(gender_gi_rate)
+        feature_df['Gender_Ecommerce_Rate'] = feature_df['Gender'].map(gender_ecom_rate)
         
         # Age group aggregations
         if 'Age_Group' in feature_df.columns:
-            age_group_gi = df.groupby('Age_Group')['GI_Aware_Binary'].mean()
+            if feature_df['Age_Group'].dtype.name == 'category':
+                feature_df['Age_Group'] = feature_df['Age_Group'].astype(str)
+            age_group_gi = feature_df.groupby('Age_Group')['GI_Aware_Binary'].mean()
             feature_df['Age_Group_GI_Rate'] = feature_df['Age_Group'].map(age_group_gi)
         
         self.logger.info("Aggregated features created")
