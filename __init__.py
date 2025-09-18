@@ -64,5 +64,7 @@ Utility modules for configuration and helper functions
 
 from .config import load_config, save_config
 from .helpers import setup_logging, create_directories
+from .debug_helpers import debug_dataframe_types, fix_mixed_types
 
-__all__ = ['load_config', 'save_config', 'setup_logging', 'create_directories']
+__all__ = ['load_config', 'save_config', 'setup_logging', 'create_directories', 
+           'debug_dataframe_types', 'fix_mixed_types']
