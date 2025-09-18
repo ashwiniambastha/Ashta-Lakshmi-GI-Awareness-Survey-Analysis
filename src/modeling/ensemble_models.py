@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 import logging
 from typing import Dict, Any, Tuple, List
-from sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score
+from sklearn.model_selection import train_test_split, StratifiedKFold, cross_val_score, GridSearchCV
 from sklearn.ensemble import (
     RandomForestClassifier, GradientBoostingClassifier, 
     VotingClassifier, StackingClassifier, ExtraTreesClassifier
@@ -16,12 +16,19 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
 from sklearn.preprocessing import LabelEncoder
-from skopt import BayesSearchCV
-from skopt.space import Real, Integer, Categorical
 import joblib
 from pathlib import Path
 import warnings
 warnings.filterwarnings('ignore')
+
+# Try to import scikit-optimize, fallback to GridSearch if not available
+try:
+    from skopt import BayesSearchCV
+    from skopt.space import Real, Integer, Categorical
+    BAYESIAN_OPTIMIZATION_AVAILABLE = True
+except ImportError:
+    BAYESIAN_OPTIMIZATION_AVAILABLE = False
+    logging.getLogger(__name__).warning("scikit-optimize not available. Using GridSearchCV instead of Bayesian optimization.")
 
 class EnsembleModeler:
     """
