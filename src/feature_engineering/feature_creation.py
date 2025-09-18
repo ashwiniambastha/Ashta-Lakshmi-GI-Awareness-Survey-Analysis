@@ -382,16 +382,36 @@ class FeatureEngineer:
                        'Binary' in col or 'Encoded' in col or 
                        col.startswith('State_') and col != 'State_Encoded' or
                        col.endswith('_Bin_5') or col.endswith('_Bin_10') or
-                       col.endswith('_Quartiles')]
+                       col.endswith('_Quartiles') or col == 'Artisan_ID']
         
         cols_to_scale = [col for col in numerical_cols if col not in exclude_cols]
         
-        if cols_to_scale:
+        # Filter out columns with all NaN or infinite values
+        final_cols_to_scale = []
+        for col in cols_to_scale:
+            try:
+                col_data = pd.to_numeric(feature_df[col], errors='coerce')
+                if not col_data.isna().all() and np.isfinite(col_data).any():
+                    final_cols_to_scale.append(col)
+                else:
+                    self.logger.warning(f"Skipping column {col} for scaling - contains all NaN or infinite values")
+            except:
+                self.logger.warning(f"Skipping column {col} for scaling - cannot convert to numeric")
+        
+        if final_cols_to_scale:
+            # Ensure data is numeric and handle any remaining NaN values
+            scale_data = feature_df[final_cols_to_scale].copy()
+            for col in final_cols_to_scale:
+                scale_data[col] = pd.to_numeric(scale_data[col], errors='coerce')
+            
+            # Fill any remaining NaN values with median
+            scale_data = scale_data.fillna(scale_data.median())
+            
             scaler = StandardScaler()
-            scaled_features = scaler.fit_transform(feature_df[cols_to_scale])
+            scaled_features = scaler.fit_transform(scale_data)
             
             # Create scaled feature names
-            scaled_feature_names = [f"{col}_scaled" for col in cols_to_scale]
+            scaled_feature_names = [f"{col}_scaled" for col in final_cols_to_scale]
             
             # Add scaled features to dataframe
             scaled_df = pd.DataFrame(scaled_features, columns=scaled_feature_names, index=feature_df.index)
@@ -399,9 +419,11 @@ class FeatureEngineer:
             
             # Store scaler for future use
             self.scalers['standard_scaler'] = scaler
-            self.scalers['scaled_columns'] = cols_to_scale
+            self.scalers['scaled_columns'] = final_cols_to_scale
             
-            self.logger.info(f"Scaled {len(cols_to_scale)} numerical features")
+            self.logger.info(f"Scaled {len(final_cols_to_scale)} numerical features")
+        else:
+            self.logger.warning("No suitable columns found for scaling")
         
         return feature_df
     
