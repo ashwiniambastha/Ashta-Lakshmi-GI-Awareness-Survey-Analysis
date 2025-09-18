@@ -1,0 +1,83 @@
+MODEL EVALUATION REPORT
+==================================================
+
+RANDOM_FOREST
+-------------
+Accuracy: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1 Score: 1.0000
+ROC AUC: 0.9999999999999999
+CV Mean: 1.0
+CV Std: 0.0
+
+GRADIENT_BOOSTING
+-----------------
+Accuracy: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1 Score: 1.0000
+ROC AUC: 1.0
+CV Mean: 1.0
+CV Std: 0.0
+
+SVM
+---
+Accuracy: 0.6719
+Precision: 0.4514
+Recall: 0.6719
+F1 Score: 0.5400
+ROC AUC: 0.9922480620155039
+CV Mean: 0.63997113997114
+CV Std: 0.048860037383368
+
+LOGISTIC_REGRESSION
+-------------------
+Accuracy: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1 Score: 1.0000
+ROC AUC: 1.0
+CV Mean: 0.9841269841269842
+CV Std: 0.022447834323382487
+
+EXTRA_TREES
+-----------
+Accuracy: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1 Score: 1.0000
+ROC AUC: 1.0
+CV Mean: 1.0
+CV Std: 0.0
+
+VOTING_CLASSIFIER
+-----------------
+Accuracy: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1 Score: 1.0000
+ROC AUC: 1.0
+CV Mean: 1.0
+CV Std: 0.0
+
+STACKING_CLASSIFIER
+-------------------
+Accuracy: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1 Score: 1.0000
+ROC AUC: 1.0
+CV Mean: 1.0
+CV Std: 0.0
+
+OPTIMIZED_RANDOM_FOREST
+-----------------------
+Accuracy: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1 Score: 1.0000
+ROC AUC: 1.0
+CV Mean: 1.0
+CV Std: 0.0
+

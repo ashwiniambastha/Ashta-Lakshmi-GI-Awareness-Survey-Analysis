@@ -1,0 +1,17 @@
+ASHTA LAKSHMI GI SURVEY - EXECUTIVE SUMMARY
+============================================================
+
+KEY METRICS:
+--------------------
+Total Artisans Surveyed: 320
+GI Awareness Rate: 67.8%
+E-commerce Adoption: 26.6%
+Subsidy Recipients: 34.4%
+Gender Awareness Gap: 6.8 percentage points
+
+MACHINE LEARNING RESULTS:
+------------------------------
+best_accuracy: random_forest (Accuracy: 100.0%)
+best_f1: random_forest (Accuracy: 100.0%)
+
+Generated: 2025-09-18 07:56:15

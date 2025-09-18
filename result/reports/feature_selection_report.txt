@@ -1,0 +1,55 @@
+FEATURE SELECTION REPORT
+==================================================
+
+Original number of features: 115
+Final number of selected features: 25
+Feature reduction: 78.3%
+
+SELECTION METHODS SUMMARY:
+------------------------------
+variance_threshold: 83 features
+statistical: 62 features
+model_based: 48 features
+rfe: 5 features
+final: 25 features
+
+FINAL SELECTED FEATURES:
+------------------------------
+1. Gender_Ecommerce_Rate_scaled
+2. Experience_Deviation_from_State
+3. Experience_Deviation_from_State_scaled
+4. GI_Gender_Interaction
+5. GI_Age_Interaction
+6. Subsidy_Experience_Interaction
+7. Subsidy_Age_Interaction
+8. Years_of_Experience^2_scaled
+9. Age Age_Experience_Ratio
+10. Subsidy_Experience_Interaction_scaled
+11. Engagement_Score_scaled
+12. Received_Subsidy_Binary
+13. Ecommerce_Age_Interaction
+14. Uses_Ecommerce_Binary
+15. GI_Experience_Interaction
+16. Age Age_Experience_Ratio_scaled
+17. Career_Start_Age_scaled
+18. Experience_Male_Interaction_scaled
+19. Subsidy_Age_Interaction_scaled
+20. Awareness_Support_Score
+21. Gender_GI_Rate_scaled
+22. Experience_per_Age_scaled
+23. Years_of_Experience^2
+24. Age_Deviation_from_State
+25. Engagement_Score
+
+TOP 10 FEATURES BY RANDOM FOREST IMPORTANCE:
+---------------------------------------------
+1. GI_Age_Interaction: 0.1946
+2. Awareness_Support_Score: 0.1583
+3. GI_Age_Interaction_scaled: 0.1541
+4. GI_Experience_Interaction: 0.1296
+5. GI_Experience_Interaction_scaled: 0.1187
+6. Awareness_Support_Score_scaled: 0.1164
+7. Engagement_Score_scaled: 0.0317
+8. Engagement_Score: 0.0251
+9. GI_Gender_Interaction: 0.0182
+10. GI_Gender_Interaction_scaled: 0.0104
