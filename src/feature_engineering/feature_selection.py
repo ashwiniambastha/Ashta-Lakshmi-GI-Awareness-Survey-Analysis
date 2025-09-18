@@ -98,18 +98,36 @@ class FeatureSelector:
             'Received_Subsidy', 'Uses_Ecommerce', 'Age_Group', 'Experience_Group'
         ]
         
-        feature_cols = [col for col in df.columns if col not in exclude_cols and not col.startswith('Unnamed')]
+        # Only select numeric columns for feature selection
+        numeric_cols = df.select_dtypes(include=[np.number]).columns.tolist()
+        feature_cols = [col for col in numeric_cols if col not in exclude_cols]
         
-        X = df[feature_cols].values
-        y = df[target_col].values
+        # Filter out any remaining non-numeric or problematic columns
+        final_feature_cols = []
+        for col in feature_cols:
+            try:
+                # Test if column can be converted to float
+                pd.to_numeric(df[col], errors='raise')
+                final_feature_cols.append(col)
+            except:
+                self.logger.warning(f"Skipping non-numeric column: {col}")
+        
+        if len(final_feature_cols) == 0:
+            raise ValueError("No suitable numeric features found for selection")
+        
+        # Create feature matrix
+        X = df[final_feature_cols].values.astype(float)
+        y = df[target_col].values.astype(int)
         
         # Handle missing values if any
-        if np.isnan(X).any():
+        if pd.isna(X).any():
             from sklearn.impute import SimpleImputer
             imputer = SimpleImputer(strategy='median')
             X = imputer.fit_transform(X)
+            self.logger.info("Applied median imputation to handle missing values")
         
-        return X, y, feature_cols
+        self.logger.info(f"Prepared {len(final_feature_cols)} numeric features for selection")
+        return X, y, final_feature_cols
     
     def _remove_low_variance_features(self, X: np.ndarray, feature_names: List[str]) -> Tuple[np.ndarray, List[str]]:
         """
